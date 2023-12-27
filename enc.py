@@ -158,10 +158,3 @@ def Init():
         key_stream(z_lh)
         A[4]^=z_lh[0]
         B[10]^=z_lh[1]
-
-Init()
-for i in range(8):
-    z=[0,0]
-    key_stream(z)
-    print(hex(z[1]),end=" ")
-    print(hex(z[0]))
